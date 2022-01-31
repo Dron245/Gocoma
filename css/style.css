@@ -130,6 +130,9 @@ a {
 	border-radius: 5px;
 	padding: 12px 30px 16px;
 }
+.button:hover {
+	background-color: blueviolet;
+}
 .Download {
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
@@ -141,45 +144,65 @@ a {
 	letter-spacing: 0.14em;
 	color: #fcfdfe;
 }
+.burg {
+	display: none;
+}
+
 @media (max-width: 991.98px) {
 	.header__conteiner {
-		max-width: 700px;
+		max-width: 758px;
 	}
 }
 @media (max-width: 767.98px) {
 	.header__conteiner {
-		max-width: 300px;
+		max-width: 576px;
 	}
 	.menu {
 		display: none;
 	}
 	.button {
-		margin-left: 30px;
+		margin-left: 250px;
+	}
+	.burg {
+		display: flex;
 	}
 }
-.burg {
-	display: flex;
-}
+
 .burger {
 	position: relative;
+	display: flex;
 	flex-direction: column;
 	flex: 0 0 30px;
 	height: 20px;
 	justify-content: space-between;
+	z-index: 5;
 }
 .burger span {
 	height: 2px;
-
+	width: 30px;
 	background-color: black;
+	margin-left: 10px;
 }
-.burger::after,
-.burger::before {
+.burger::before,
+.burger::after {
+	position: relative;
+	margin-left: 10px;
 	content: "";
 	height: 2px;
+	width: auto;
 	background-color: black;
 }
 .main {
 	flex: 1 0 auto;
 }
 .footer {
+}
+
+@media (max-width: 575.98px) {
+	.header__conteiner {
+		max-width: 350px;
+	}
+	.button {
+		margin-left: 40px;
+	}
 }
