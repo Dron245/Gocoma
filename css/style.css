@@ -224,8 +224,8 @@ a {
 	font-style: normal;
 }
 .block__text {
-	flex: 0 0 48%;
-	padding: 120px 50px 30px 40px;
+	flex: 0 1 48%;
+	padding: 120px 40px 30px 40px;
 }
 .text__title {
 	font-weight: bold;
@@ -244,12 +244,12 @@ a {
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 138.5%;
-	width: 300px;
+	padding-right: 20px;
 	/* or 17px */
 
 	letter-spacing: 0.08em;
 	font-feature-settings: "pnum" on, "lnum" on;
-	padding: 12px 12px 29px 0;
+	padding: 0px 12px 0px 0;
 	color: #616161;
 }
 .text__button {
@@ -278,6 +278,7 @@ a {
 .vra4 {
 }
 .block1__video {
+	display: flex;
 }
 .video_body {
 }
@@ -288,4 +289,12 @@ a {
 .video_title {
 }
 .video_text {
+}
+.video_text2 {
+}
+.text__text:not(:last-child) {
+	margin-bottom: 29px;
+}
+.text__title:not(:last-child) {
+	margin-bottom: 12px;
 }
