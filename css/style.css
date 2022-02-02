@@ -535,7 +535,7 @@ a {
 	height: 65.75px;
 	left: -45px;
 	top: 70px;
-	z-index: -1;
+	z-index: -2;
 	background: #ec5863;
 	border-radius: 16px;
 	transform: rotate(-30deg);
