@@ -452,10 +452,11 @@ a {
 	}
 }
 .statistic__conteiner {
-	background: #fafbfd;
+	background: #efeff0;
 	display: flex;
 	justify-content: center;
 	position: relative;
+	z-index: -2;
 }
 .statistic__block {
 	background: #ffffff;
@@ -527,6 +528,7 @@ a {
 	flex: 1 0 300px;
 	justify-content: space-between;
 	text-align: center;
+	position: relative;
 }
 .statistic__block::after {
 	content: "";
@@ -535,7 +537,7 @@ a {
 	height: 65.75px;
 	left: -45px;
 	top: 70px;
-	z-index: -2;
+	z-index: -1;
 	background: #ec5863;
 	border-radius: 16px;
 	transform: rotate(-30deg);
@@ -545,9 +547,9 @@ a {
 	content: "";
 	width: 96.96px;
 	height: 96.96px;
-	left: 57px;
-	top: 48px;
-
+	left: 257px;
+	top: -40px;
+	z-index: -1;
 	background: #ec5863;
 	border-radius: 30px;
 	transform: rotate(105deg);
@@ -557,9 +559,9 @@ a {
 	position: absolute;
 	width: 127.47px;
 	height: 127.47px;
-	left: 84.77px;
-	top: 54.35px;
-	z-index: 1;
+	left: 500px;
+	top: 0px;
+	z-index: -1;
 	background: #ec5863;
 	border-radius: 30px;
 	transform: rotate(-30deg);
